@@ -1,1 +1,12 @@
-/* custom styles */
+/*LAYOUT*/
+main {
+  display: flex;
+  flex-wrap: wrap; }
+
+.box {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .box {
+      width: 50%; } }
+
+/*# sourceMappingURL=main.css.map */
