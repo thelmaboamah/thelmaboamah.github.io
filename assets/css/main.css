@@ -4,9 +4,22 @@ main {
   flex-wrap: wrap; }
 
 .box {
-  width: 100%; }
+  width: 100%;
+  min-height: 50vh; }
   @media screen and (min-width: 768px) {
     .box {
       width: 50%; } }
+
+#welcome {
+  background: #edb83d; }
+
+#about {
+  background: #000b29; }
+
+#work {
+  background: #f8f5f2; }
+
+#contact {
+  background: #d70026; }
 
 /*# sourceMappingURL=main.css.map */
