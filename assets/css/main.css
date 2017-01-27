@@ -1,11 +1,39 @@
-/*LAYOUT*/
+/***** GENERAL *****/
+body {
+  background: #f8f5f2;
+  font-family: 'Source Code Pro', monospace;
+  color: #000b29; }
+  body a {
+    text-decoration: none;
+    color: inherit; }
+
+.flex-container {
+  display: flex; }
+
+.box-back {
+  display: none; }
+
+/**** NAVIGATION ****/
+nav {
+  background: #f8f5f2;
+  max-width: 800px;
+  margin: 0 auto; }
+  nav ul {
+    list-style-type: none;
+    margin-left: auto; }
+  nav li {
+    display: inline-block; }
+
+/***** LAYOUT ****/
 main {
   display: flex;
   flex-wrap: wrap; }
 
 .box {
   width: 100%;
-  min-height: 50vh; }
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center; }
   @media screen and (min-width: 768px) {
     .box {
       width: 50%; } }
@@ -14,12 +42,18 @@ main {
   background: #edb83d; }
 
 #about {
-  background: #000b29; }
+  background: #000b29;
+  color: #f8f5f2; }
 
 #work {
   background: #f8f5f2; }
 
 #contact {
   background: #d70026; }
+
+/****** footers *****/
+footer {
+  background: #000b29;
+  color: #f8f5f2; }
 
 /*# sourceMappingURL=main.css.map */

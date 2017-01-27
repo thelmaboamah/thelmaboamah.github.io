@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- styles -->
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- scripts -->
   <script type="text/javascript" src="assets/js/app.js"></script>
@@ -21,21 +22,19 @@
 </head>
 <body>
   <div id="page-wrapper">
-    <header>
+    <nav class="flex-container">
       <img src="assets/imgs/logo.png" alt="Logo">
-      <h1>Thelma Boamah</h1>
-    </header>
-    <nav>
-      <img src="" alt="" id="logo">
-      <ul>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+
+      <!-- <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="work.html">My Work</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
+      </ul> -->
     </nav>
     <main>
     <!-- WELCOME BOX -->
-      <section class="box" id="welcome">
+      <section class="flex-container box" id="welcome">
         <div class="box-front">
           <i class="fa fa-eye" aria-hidden="true"></i>
           <h1>Thanks for visiting my personal portfolio. Have a look around!</h1>
@@ -46,10 +45,11 @@
       </section>
     
     <!-- ABOUT BOX -->
-      <section class="box" id="about">
+      <section class="flex-container box" id="about">
         <div class="box-front">
           <i class="fa fa-user" aria-hidden="true"></i>
           <h1>About Me</h1>
+          <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
         </div>
         <div class="box-back">
           <img src="" alt="Photograph of Thelma Boamah">
@@ -61,17 +61,18 @@
       </section>
     
     <!-- PORTFOLIO BOX -->
-      <section class="box" id="work">
+      <section class="flex-container box" id="work">
         <div class="box-front">
           <i class="fa fa-laptop" aria-hidden="true"></i>
           <h1>My Work</h1>
+          <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
         </div>
         
         <div class="box-back"></div>
       </section>
       
     <!-- CONTACT BOX  --> 
-      <section class="box" id="contact">
+      <section class="flex-container box" id="contact">
         <div class="box-front">
           <h1>Contact Me</h1>
           <a href="mailto:thelma.a.boamah@gmail.com">
