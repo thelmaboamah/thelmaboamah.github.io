@@ -1,4 +1,7 @@
 /***** GENERAL *****/
+* {
+  box-sizing: border-box; }
+
 body {
   background: #f8f5f2;
   font-family: 'Source Code Pro', monospace;
@@ -13,16 +16,33 @@ body {
 .box-back {
   display: none; }
 
+.text-white {
+  color: #f8f5f2; }
+
 /**** NAVIGATION ****/
 nav {
   background: #f8f5f2;
-  max-width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 65px; }
   nav ul {
     list-style-type: none;
     margin-left: auto; }
   nav li {
     display: inline-block; }
+  nav img {
+    position: relative;
+    width: 70px;
+    z-index: 10;
+    top: 20px;
+    cursor: pointer; }
+  nav .click-me {
+    position: absolute;
+    left: calc(50% + 45px);
+    top: 37px;
+    color: #d70026;
+    font-size: 1.25rem; }
 
 /***** LAYOUT ****/
 main {
@@ -33,17 +53,22 @@ main {
   width: 100%;
   min-height: 50vh;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center;
+  padding: 60px; }
   @media screen and (min-width: 768px) {
     .box {
       width: 50%; } }
+  .box .fa {
+    font-size: 36px; }
+  .box h1 {
+    font-size: 24px; }
 
 #welcome {
   background: #edb83d; }
 
 #about {
-  background: #000b29;
-  color: #f8f5f2; }
+  background: #000b29; }
 
 #work {
   background: #f8f5f2; }

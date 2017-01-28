@@ -13,7 +13,12 @@
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
   <!-- scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
@@ -23,9 +28,11 @@
 <body>
   <div id="page-wrapper">
     <nav class="flex-container">
-      <img src="assets/imgs/logo.png" alt="Logo">
-      <i class="fa fa-arrow-left" aria-hidden="true"></i>
-
+     <img class="animated pulse infinite" src="assets/imgs/logo.png" alt="Logo">
+      <div class="click-me">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <span>Click Me!</span>
+      </div>
       <!-- <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="work.html">My Work</a></li>
@@ -36,8 +43,8 @@
     <!-- WELCOME BOX -->
       <section class="flex-container box" id="welcome">
         <div class="box-front">
-          <i class="fa fa-eye" aria-hidden="true"></i>
-          <h1>Thanks for visiting my personal portfolio. Have a look around!</h1>
+          <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+          <h1>Hi, I'm Thelma, a Bay Area web developer. Thanks for visiting my portfolio site. <br>Have a look around!</h1>
         </div>
         <div class="box-back">
           <!-- Add some kind of dancing gif -->
@@ -45,16 +52,15 @@
       </section>
     
     <!-- ABOUT BOX -->
-      <section class="flex-container box" id="about">
+      <section class="flex-container box text-white" id="about">
         <div class="box-front">
-          <i class="fa fa-user" aria-hidden="true"></i>
+          <i class="fa fa-smile-o" aria-hidden="true"></i>
           <h1>About Me</h1>
           <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
         </div>
         <div class="box-back">
           <img src="" alt="Photograph of Thelma Boamah">
           <p>
-            <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
             Hi, I'm Thelma. I'm a fullstack developer based in the Bay Area... 
           </p>
         </div>
@@ -72,8 +78,9 @@
       </section>
       
     <!-- CONTACT BOX  --> 
-      <section class="flex-container box" id="contact">
+      <section class="flex-container box text-white" id="contact">
         <div class="box-front">
+          <i class="fa fa-phone" aria-hidden="true"></i>
           <h1>Contact Me</h1>
           <a href="mailto:thelma.a.boamah@gmail.com">
             <i class="fa fa-envelope" aria-hidden="true" title="Email"></i>
