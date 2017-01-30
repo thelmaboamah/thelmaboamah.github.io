@@ -1,3 +1,3 @@
 .DS_Store
-*.scss
+_*.scss
 .sass-cache

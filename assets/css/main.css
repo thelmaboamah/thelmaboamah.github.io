@@ -8,7 +8,8 @@ body {
   color: #000b29; }
   body a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    font-weight: bold; }
 
 .flex-container {
   display: flex; }
@@ -139,8 +140,6 @@ header {
       #about .box-back span {
         color: #f8f5f2;
         background: #000b29; } }
-  #about .box-back a {
-    font-weight: bold; }
   #about .box-back img {
     width: 150px;
     display: block;
