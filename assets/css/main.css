@@ -80,7 +80,7 @@ header {
     border-bottom: 1px solid #f8f5f2; }
 
 /***** LAYOUT ****/
-main {
+#home {
   display: flex;
   flex-wrap: wrap; }
 
@@ -154,6 +154,12 @@ main {
     #work .box-back {
       background: #000b29;
       color: #f8f5f2; } }
+  #work .box-back .fa-arrow-down {
+    font-size: 24px; }
+  #work .box-back .pf-thumbnails {
+    width: 100%; }
+    #work .box-back .pf-thumbnails div {
+      width: 33%; }
 
 #contact {
   background: #d70026;
