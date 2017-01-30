@@ -22,21 +22,24 @@ $(document).ready(function() {
 
 	var projects = [
 		{
-		image:"hillarymyths.png",
+		image:"assets/imgs/hillarymyths.png",
+		alt: "Screenshot of Hillary Myths dot org",
 		url: "https://hillarymyths.org/",	
 		name: "Hillary Myths",
 		description: "A question and answer site with the goal of debunking common misconceptions about Hillary Clinton during the 2016 election.",
 		repoUrl:"https://github.com/DevProgress/i-like-hillary-but"
 		},
 		{
-			image:"drumkit.png",
+			image:"assets/imgs/drumkit.png",
+			alt: "Screenshot of Questlove drumkit site",
 			url: "http://thelma.codes/drumkit/",	
 			name: "JS Drumkit",
 			description: "An interactive drumkit built with Vanilla JS as part of <a href='http://javascript30.com'>JavaScipt30.</a>.",
 			repoUrl:"https://github.com/thelmaboamah/drumkit"
 		},
 		{
-			image:"airbnb.png",
+			image:"assets/imgs/airbnb.png",
+			alt: "Screenshot of Airbnb clone site",
 			url: "http://thelma.codes/airbnb_homepage_clone/",	
 			name: "Airbnb Clone",
 			description:"A responsive clone site of Airbnb's homepage that I build with HTML, CSS, and jQuery.",
@@ -45,9 +48,11 @@ $(document).ready(function() {
 	];
 
 	var thumbnails = "";
-	for (var i = 0; i < 3, i++ ) {
-
+	for (var i = 0; i < 3; i++ ) {
+		thumbnails += `<a class="thumbnail" href="work.html"><img src="${projects[i].image}" alt="${projects[i].alt}"/></a>`
 	}
+
+	$(".pf-thumbnails").append(thumbnails);
 
 
 
