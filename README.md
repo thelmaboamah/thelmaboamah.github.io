@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-[screenshot]: assets/imgs/portfolio.png "Screenshot of portfolio"
+[screenshot]: https://github.com/thelmaboamah/personal-portfolio/blob/gh-pages/assets/imgs/portfolio.png "Screenshot of portfolio"
 
 To view the site, visit [thelma.codes] (http://thelma.codes)
 
