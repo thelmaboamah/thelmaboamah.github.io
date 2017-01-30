@@ -13,36 +13,71 @@ body {
 .flex-container {
   display: flex; }
 
-.box-back {
-  display: none; }
-
 .text-white {
   color: #f8f5f2; }
 
-/**** NAVIGATION ****/
-nav {
+/**** HEADER ****/
+header {
   background: #f8f5f2;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   height: 65px; }
-  nav ul {
-    list-style-type: none;
-    margin-left: auto; }
-  nav li {
-    display: inline-block; }
-  nav img {
+  header img {
     position: relative;
     width: 70px;
     z-index: 10;
     top: 20px;
     cursor: pointer; }
-  nav .click-me {
+  header .click-me {
     position: absolute;
     left: calc(50% + 45px);
     top: 37px;
     color: #d70026;
     font-size: 1.25rem; }
+
+/**** NAVIGATION ***/
+.main-nav {
+  display: none;
+  width: 100%;
+  height: 300px;
+  z-index: 5;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background: #d4c2b0; }
+  @media screen and (min-width: 576px) {
+    .main-nav {
+      width: 60%; } }
+  @media screen and (min-width: 768px) {
+    .main-nav {
+      width: 50%; } }
+  @media screen and (min-width: 992px) {
+    .main-nav {
+      width: 35%; } }
+  .main-nav ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-padding-start: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px; }
+  .main-nav li {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 28px;
+    color: #d70026;
+    font-weight: bold; }
+    .main-nav li:hover {
+      background: #d70026;
+      color: #f8f5f2; }
+  .main-nav .light-border {
+    border-bottom: 1px solid #f8f5f2; }
 
 /***** LAYOUT ****/
 main {
@@ -51,11 +86,26 @@ main {
 
 .box {
   width: 100%;
-  min-height: 50vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 60px; }
+  min-height: 50vh; }
+  .box .box-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
+    height: 100%; }
+  .box .box-back {
+    display: none;
+    padding: 60px;
+    width: 100%;
+    height: 100%; }
+    .box .box-back p {
+      font-size: 20px; }
+    .box .box-back .fa-times {
+      display: block;
+      float: right;
+      cursor: pointer; }
   @media screen and (min-width: 768px) {
     .box {
       width: 50%; } }
@@ -65,20 +115,76 @@ main {
     font-size: 24px; }
 
 #welcome {
-  background: #edb83d; }
+  background: #edb83d;
+  text-align: center; }
+  #welcome span {
+    color: #d70026; }
 
-#about {
-  background: #000b29; }
+#about .box-front {
+  background: #000b29;
+  color: #f8f5f2; }
+#about .box-back {
+  background: #d70026;
+  color: #f8f5f2; }
+  #about .box-back span {
+    padding: 0 5px;
+    display: inline-block;
+    margin-top: 7px;
+    color: #d70026;
+    background: #edb83d; }
+  @media screen and (min-width: 768px) {
+    #about .box-back {
+      background: #f8f5f2;
+      color: #000b29; }
+      #about .box-back span {
+        color: #f8f5f2;
+        background: #000b29; } }
+  #about .box-back a {
+    font-weight: bold; }
+  #about .box-back img {
+    width: 150px;
+    display: block;
+    margin: 0 auto; }
 
-#work {
+#work .box-front {
   background: #f8f5f2; }
+#work .box-back {
+  background: #edb83d; }
+  @media screen and (min-width: 768px) {
+    #work .box-back {
+      background: #000b29;
+      color: #f8f5f2; } }
 
 #contact {
-  background: #d70026; }
+  background: #d70026;
+  color: #f8f5f2; }
+  #contact .fa {
+    margin: 0 5px; }
+  #contact h1 {
+    margin-bottom: 20px; }
+
+.fa-chevron-circle-up {
+  position: relative;
+  bottom: -60px;
+  cursor: pointer; }
 
 /****** footers *****/
 footer {
   background: #000b29;
-  color: #f8f5f2; }
+  color: #f8f5f2;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    footer {
+      flex-direction: row; } }
+  footer .social-links {
+    margin-right: auto;
+    font-size: 28px; }
+    footer .social-links .fa {
+      margin-right: 2px; }
+  footer p {
+    margin-top: 0;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

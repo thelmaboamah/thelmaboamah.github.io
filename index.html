@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+   <link rel="stylesheet" type="text/css" href="vendor/css/animate.css">
   <!-- scripts -->
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -26,62 +26,70 @@
   <script src="https://use.fontawesome.com/eed7e9c564.js"></script>
 </head>
 <body>
-  <div id="page-wrapper">
-    <nav class="flex-container">
-     <img class="animated pulse infinite" src="assets/imgs/logo.png" alt="Logo">
-      <div class="click-me">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        <span>Click Me!</span>
+  <header class="flex-container">
+   <img class="animated pulse infinite" src="assets/imgs/logo.png" alt="Logo">
+    <div class="click-me">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      <span>Click Me!</span>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+    <ul>
+      <li class="light-border"><a href="index.html">Home</a></li>
+      <!-- <li class="light-border"><a href="about.html">About Me</a></li> -->
+      <li class="light-border"><a href="work.html">My Work</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+  <main>
+  <!-- WELCOME BOX -->
+    <section class="box" id="welcome">
+      <div class="box-front">
+        <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+        <h1>Thanks for visiting my portfolio site.<br><span>Have a look around!</span></h1>
       </div>
-      <!-- <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">My Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul> -->
-    </nav>
-    <main>
-    <!-- WELCOME BOX -->
-      <section class="flex-container box" id="welcome">
-        <div class="box-front">
-          <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
-          <h1>Hi, I'm Thelma, a Bay Area web developer. Thanks for visiting my portfolio site. <br>Have a look around!</h1>
-        </div>
-        <div class="box-back">
-          <!-- Add some kind of dancing gif -->
-        </div>
-      </section>
-    
-    <!-- ABOUT BOX -->
-      <section class="flex-container box text-white" id="about">
-        <div class="box-front">
-          <i class="fa fa-smile-o" aria-hidden="true"></i>
-          <h1>About Me</h1>
-          <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
-        </div>
-        <div class="box-back">
-          <img src="" alt="Photograph of Thelma Boamah">
-          <p>
-            Hi, I'm Thelma. I'm a fullstack developer based in the Bay Area... 
-          </p>
-        </div>
-      </section>
-    
-    <!-- PORTFOLIO BOX -->
-      <section class="flex-container box" id="work">
-        <div class="box-front">
-          <i class="fa fa-laptop" aria-hidden="true"></i>
-          <h1>My Work</h1>
-          <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
-        </div>
-        
-        <div class="box-back"></div>
-      </section>
+    </section>
+  
+  <!-- ABOUT BOX -->
+    <section class="box" id="about">
       
-    <!-- CONTACT BOX  --> 
-      <section class="flex-container box text-white" id="contact">
-        <div class="box-front">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <h1>Contact Me</h1>
+      <div class="box-front">
+        <i class="fa fa-smile-o" aria-hidden="true"></i>
+        <h1>About Me</h1>
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+      </div>
+      
+      <div class="box-back">
+        <i class="fa fa-times" aria-hidden="true"></i>
+
+        <img src="assets/imgs/thelma.png" alt="Photograph of Thelma Boamah">
+        <p>
+          Hi, I'm Thelma. I'm a web developer currently studying at <a href="https://ga.co" target="_blank">General Assembly</a> in San Francisco.<!-- <span><a href="about.html">Learn more</a></span> -->
+        </p>
+      </div>
+    </section>
+  
+  <!-- PORTFOLIO BOX -->
+    <section class="box" id="work">
+      <div class="box-front">
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        <h1>My Work</h1>
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+      </div>
+      
+      <div class="box-back">
+        <i class="fa fa-times" aria-hidden="true"></i>
+        <p>TEXT TEXT TEXT</p>
+      </div>
+    </section>
+    
+  <!-- CONTACT BOX  --> 
+    <section class="box" id="contact">
+      <div class="box-front">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h1>Contact Me</h1>
+        <div>
           <a href="mailto:thelma.a.boamah@gmail.com">
             <i class="fa fa-envelope" aria-hidden="true" title="Email"></i>
           </a>
@@ -91,17 +99,24 @@
           <a href="https://linkedin.com/in/thelmaboamah">
             <i class="fa fa-linkedin-square" aria-hidden="true" title="Linkedin"></i>
           </a>
-          
-        </div>
-        <div class="box-back">
-         <!--  Second dancing gif -->
-        </div>
-      </section>
-    </main>
-    
-    <footer>
-      <p>Design inspired by <a href="http://www.youandigraphics.com/">YOUANDIGRAPHICS</a></p>
-    </footer>
-  </div>
+        </div> 
+      </div>
+    </section>
+  
+  </main>
+  <footer class="flex-container">
+    <div class="social-links">
+      <a href="mailto:thelma.a.boamah@gmail.com">
+        <i class="fa fa-envelope" aria-hidden="true" title="Email"></i>
+      </a>
+      <a href="https://github.com/thelmaboamah">
+        <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+      </a>
+      <a href="https://linkedin.com/in/thelmaboamah">
+        <i class="fa fa-linkedin-square" aria-hidden="true" title="Linkedin"></i>
+      </a>
+    </div>
+    <p>&copy; 2017 Thelma Codes | Design inspired by <a href="http://www.youandigraphics.com/">YOUANDIGRAPHICS</a></p>
+  </footer>
 </body>
 </html>
