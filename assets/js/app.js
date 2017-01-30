@@ -34,7 +34,7 @@ $(document).ready(function() {
 			alt: "Screenshot of Questlove drumkit site",
 			url: "http://thelma.codes/drumkit/",	
 			name: "JS Drumkit",
-			description: "An interactive drumkit built with Vanilla JS as part of <a href='http://javascript30.com'>JavaScipt30.</a>.",
+			description: "An interactive drumkit built with Vanilla JS as part of <a href='http://javascript30.com'>JavaScipt30</a>.",
 			repoUrl:"https://github.com/thelmaboamah/drumkit"
 		},
 		{
@@ -42,20 +42,31 @@ $(document).ready(function() {
 			alt: "Screenshot of Airbnb clone site",
 			url: "http://thelma.codes/airbnb_homepage_clone/",	
 			name: "Airbnb Clone",
-			description:"A responsive clone site of Airbnb's homepage that I build with HTML, CSS, and jQuery.",
+			description:"A responsive clone of Airbnb's homepage that I built with HTML, CSS, and jQuery.",
 			repoUrl:"https://github.com/thelmaboamah/airbnb_homepage_clone"
 		}
 	];
 
 	var thumbnails = "";
 	for (var i = 0; i < 3; i++ ) {
-		thumbnails += `<a class="thumbnail" href="work.html"><img src="${projects[i].image}" alt="${projects[i].alt}"/></a>`
+		thumbnails += `<a class="thumbnail" href="work.html" target="_blank"><img src="${projects[i].image}" alt="${projects[i].alt}"/></a>`
 	}
 
 	$(".pf-thumbnails").append(thumbnails);
 
+	var samples = "";
+	for (var i = 0; i < projects.length; i++) {
+		samples += `<div class="sample col-xs-12 col-md-6 col-lg-4">
+									<a href="${projects[i].url}" target="_blank"><img class="img-fluid" src="${projects[i].image}" alt="${projects[i].alt}"/></a>
+									<div>
+										<h3>${projects[i].name}</h3>
+										<p>${projects[i].description}</p>
+										<a href="${projects[i].repoUrl}" target="_blank">Repo</a>
+									</div>
+								</div>`
+	}
 
-
+	$(".portfolio").append(samples);
 
 
 

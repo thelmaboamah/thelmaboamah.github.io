@@ -12,7 +12,7 @@ body {
 	color: $black;
 
 	a {
-		text-decoration: none;
+		text-decoration: none !important;
 		color: inherit;
 		font-weight: bold;
 	}
@@ -88,6 +88,9 @@ header {
 	  font-size: 28px;
 	  color: $red;
 	  font-weight: bold;
+	  a {
+	  	color: inherit !important;
+	  }
 
 	  &:hover {
 	  	background: $red;
@@ -250,7 +253,40 @@ header {
 }
 
 
+/***** PORTFOLIO PAGE STYLES ***/
+#work-page {
+	min-height: 100vh;
+	background: $yellow;
+	
+	h1 {
+		padding: 40px 0 15px;
+    font-weight: bold;
+    color: $red;
+	}
 
+	.row {
+		padding: 10px;
+	}
+	.sample {
+		margin-bottom: 30px;
+		div {
+			background: $white;
+			padding: 15px;
+
+			h3 {
+				font-weight: bold;
+				font-size: 24px;
+			}
+			
+			a {
+				&:hover {
+					background: $black;
+					color: $white;
+				}
+			}	
+		}
+	}
+}
 
 /****** footers *****/
 

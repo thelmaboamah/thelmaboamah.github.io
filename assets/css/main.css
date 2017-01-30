@@ -7,7 +7,7 @@ body {
   font-family: 'Source Code Pro', monospace;
   color: #000b29; }
   body a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     font-weight: bold; }
 
@@ -74,6 +74,8 @@ header {
     font-size: 28px;
     color: #d70026;
     font-weight: bold; }
+    .main-nav li a {
+      color: inherit !important; }
     .main-nav li:hover {
       background: #d70026;
       color: #f8f5f2; }
@@ -178,6 +180,28 @@ header {
   position: relative;
   bottom: -60px;
   cursor: pointer; }
+
+/***** PORTFOLIO PAGE STYLES ***/
+#work-page {
+  min-height: 100vh;
+  background: #edb83d; }
+  #work-page h1 {
+    padding: 40px 0 15px;
+    font-weight: bold;
+    color: #d70026; }
+  #work-page .row {
+    padding: 10px; }
+  #work-page .sample {
+    margin-bottom: 30px; }
+    #work-page .sample div {
+      background: #f8f5f2;
+      padding: 15px; }
+      #work-page .sample div h3 {
+        font-weight: bold;
+        font-size: 24px; }
+      #work-page .sample div a:hover {
+        background: #000b29;
+        color: #f8f5f2; }
 
 /****** footers *****/
 footer {
