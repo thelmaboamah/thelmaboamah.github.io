@@ -20,14 +20,14 @@ $(document).ready(function() {
 	var baseUrl="http://thelmaboamah.github.io"
 
 	var projects = [
-		{
-		image:"assets/imgs/closeup.png",
-		alt: "Screenshot of Close Up app",
-		url: "https://close-up.herokuapp.com/",	
-		name: "Close Up",
-		description: "Photo capture and CSS filters",
-		repoUrl:"https://github.com/thelmaboamah/ga-final-project"
-		},
+		// {
+		// image:"assets/imgs/closeup.png",
+		// alt: "Screenshot of Close Up app",
+		// url: "https://close-up.herokuapp.com/",	
+		// name: "Close Up",
+		// description: "Photo capture and CSS filters",
+		// repoUrl:"https://github.com/thelmaboamah/ga-final-project"
+		// },
 		{
 		image:"assets/imgs/podme.png",
 		alt: "Screenshot of Podme app",
