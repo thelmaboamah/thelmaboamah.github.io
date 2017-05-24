@@ -1,6 +1,3 @@
-// sanity check
-console.log("app.js linked.");
-
 $(document).ready(function() {
 	$("header img").click(function(){
 		$(this).removeClass("infinite");
