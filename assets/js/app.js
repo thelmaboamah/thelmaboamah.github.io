@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 	var thumbnails = "";
 	for (var i = 0; i < 3; i++ ) {
-		thumbnails += `<a class="thumbnail" href="work.html" target="_blank" rel="noreferrer"><img src="${projects[i].image}" alt="${projects[i].alt}"/></a>`
+		thumbnails += `<a class="thumbnail" href="work.html"><img src="${projects[i].image}" alt="${projects[i].alt}"/></a>`
 	}
 
 	$(".pf-thumbnails").append(thumbnails);
